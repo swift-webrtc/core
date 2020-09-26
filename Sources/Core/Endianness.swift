@@ -1,6 +1,6 @@
 //
 //  Endianness.swift
-//  Core
+//  webrtc-core
 //
 //  Created by sunlubo on 2020/9/11.
 //  Copyright © 2020 sunlubo. All rights reserved.
