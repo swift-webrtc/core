@@ -16,6 +16,7 @@ public func allTests() -> [XCTestCaseEntry] {
     testCase(HMACTests.allTests),
     testCase(HashTests.allTests),
     testCase(DurationTests.allTests),
+    testCase(LineWriterTests.allTests),
   ]
 }
 #endif

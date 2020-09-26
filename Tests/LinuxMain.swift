@@ -15,4 +15,5 @@ tests += ChecksumTests.allTests
 tests += HMACTests.allTests
 tests += HashTests.allTests
 tests += DurationTests.allTests
+tests += LineWriterTests.allTests
 XCTMain(tests)
