@@ -67,4 +67,32 @@ extension Duration {
   public static func + (lhs: Duration, rhs: Duration) -> Duration {
     Duration(nanoseconds: lhs.nanoseconds + rhs.nanoseconds)
   }
+
+  public static func += (lhs: inout Duration, rhs: Duration) {
+    lhs.nanoseconds += rhs.nanoseconds
+  }
+
+  public static func + <T>(lhs: Duration, rhs: T) -> Duration where T: FixedWidthInteger {
+    Duration(nanoseconds: lhs.nanoseconds + Int(rhs))
+  }
+
+  public static func += <T>(lhs: inout Duration, rhs: T) where T: FixedWidthInteger {
+    lhs.nanoseconds += Int(rhs)
+  }
+
+  public static func * (lhs: Duration, rhs: Duration) -> Duration {
+    Duration(nanoseconds: lhs.nanoseconds * rhs.nanoseconds)
+  }
+
+  public static func *= (lhs: inout Duration, rhs: Duration) {
+    lhs.nanoseconds *= rhs.nanoseconds
+  }
+
+  public static func * <T>(lhs: Duration, rhs: T) -> Duration where T: FixedWidthInteger {
+    Duration(nanoseconds: lhs.nanoseconds * Int(rhs))
+  }
+
+  public static func *= <T>(lhs: inout Duration, rhs: T) where T: FixedWidthInteger {
+    lhs.nanoseconds *= Int(rhs)
+  }
 }
