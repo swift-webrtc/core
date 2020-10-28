@@ -8,4 +8,8 @@
 
 import Logging
 
-public var logger = Logger(label: "swift-webrtc")
+public struct LoggerConfiguration {
+  public static var `default` = LoggerConfiguration()
+
+  public var logLevel: Logger.Level = .info
+}
